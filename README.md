@@ -128,3 +128,8 @@ This project is licensed under the terms of the [MIT License](./LICENSE).
 ## Memes: 
 <img src="https://www.gzeromedia.com/media-library/image.gif?id=52468706&width=980" width="256" height="256">
 <img src="https://media.tenor.com/0oCXYN5vtv8AAAAM/work-sucks.gif" width="256" height="256"/>
+
+## 🕵️ Live Vercel: 
+Check out the live demo of the AI-driven video conferencing app deployed on Vercel:
+
+[Video Conferencing App](https://video-conferencing-gamma.vercel.app)
