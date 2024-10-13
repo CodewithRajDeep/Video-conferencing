@@ -61,12 +61,12 @@ makes it an ideal solution for businesses or educational purposes where keeping 
 
 ## <a name="snippet"> 🤠 Setting Up Environment Variables: </a>
   Create a .env file in the root directory and add the following:
-    ```bash
-        Copy code
-        NEXT_PUBLIC_ASSEMBLYAI_API_KEY=your_assemblyai_api_key
-        NEXT_PUBLIC_GETSTREAM_API_KEY=your_getstream_api_key
-         NEXT_PUBLIC_GETSTREAM_API_SECRET=your_getstream_api_secret
-       ```
+           ```bash
+               Copy code
+               NEXT_PUBLIC_ASSEMBLYAI_API_KEY=your_assemblyai_api_key
+               NEXT_PUBLIC_GETSTREAM_API_KEY=your_getstream_api_key
+               NEXT_PUBLIC_GETSTREAM_API_SECRET=your_getstream_api_secret
+             ```
 ## <a name="guidelines"> 🕷️Community Guidelines: </a> 
 
 1. General Contribution Guidelines
