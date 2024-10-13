@@ -132,6 +132,7 @@ This project is licensed under the terms of the [MIT License](./LICENSE).
 ## <a name="vercel deployment"> 🕵️ Live Vercel: </a>
 
 Check out the live demo of the AI-driven video conferencing app deployed on Vercel:
+
  <a href="https://video-conferencing-gamma.vercel.app" title="Vercel Deploy">
   <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/76x76.png" alt="Vercel Logo" width="30">
   Live Video-Streaming 
