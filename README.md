@@ -119,7 +119,11 @@ Constructive feedback: When reviewing code, focus on giving constructive feedbac
    Copyright (c) 2024 Deep Raj
 This project is licensed under the terms of the [MIT License](./LICENSE).
 
-## Deploy on Vercel
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🕺Demonstration: 
+<img src="https://www.ringcentral.com/us/en/blog/wp-content/uploads/2021/11/Live-transcription.gif" width="256" height="256"/>
+<img src="https://i.pinimg.com/originals/2f/64/c6/2f64c6038f8c62bf166f0eb216f3ad28.gif" width="256" height="256"/>
+<img src="https://cdn.dribbble.com/users/1708816/screenshots/15637339/media/2ea4a194c3149189c2507d137f81a652.gif" width="256" height="256"/>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Memes: 
+<img src="https://www.gzeromedia.com/media-library/image.gif?id=52468706&width=980" width="256" height="256">
+<img src="https://media.tenor.com/0oCXYN5vtv8AAAAM/work-sucks.gif" width="256" height="256"/>
