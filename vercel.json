@@ -15,11 +15,6 @@
         "src": "/(.*)",
         "dest": "/$1"
       }
-    ],
-    "env": {
-        "NEXT_PUBLIC_STREAM_API_KEY": "@assemblyai_api_key",
-        "STREAM_SECRET": "@getstream_api_key",
-       "ASSEMBLY_API_KEY": "@getstream_api_secret"
-    }
+    ]
   }
   
