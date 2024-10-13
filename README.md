@@ -133,5 +133,3 @@ This project is licensed under the terms of the [MIT License](./LICENSE).
 Check out the live demo of the AI-driven video conferencing app deployed on Vercel:
 
 [![Vercel Logo](https://raw.githubusercontent.com/vercel/logos/main/official/logos/vera.svg)](https://video-conferencing-gamma.vercel.app)
-
-[Video Conferencing App](https://video-conferencing-gamma.vercel.app)
