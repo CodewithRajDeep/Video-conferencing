@@ -1,0 +1,76 @@
+import { RealtimeTranscriber, RealtimeTranscript } from 'assemblyai';
+import { getAssemblyToken } from './getAssemblyToken';
+import { Dispatch, SetStateAction } from 'react';
+
+export async function createTranscriber(
+  transcriptionProcessed: (transcription: string, isFinal: boolean) => void,
+  setLlamaActive: Dispatch<SetStateAction<boolean>>,
+  processPrompt: (prompt: string) => void
+): Promise<RealtimeTranscriber | undefined> {
+  const token = await getAssemblyToken();
+  console.log('Assembly token: ', token);
+  if (!token) {
+    console.error('No token found');
+    return;
+  }
+  const transcriber = new RealtimeTranscriber({
+    sampleRate: 16_000,
+    token: token,
+    wordBoost: ['Llama'],
+    endUtteranceSilenceThreshold: 1000,
+    //   encoding: 'pcm_mulaw',
+  });
+
+  transcriber.on('open', ({ sessionId }) => {
+    console.log(`Transcriber opened with session ID: ${sessionId}`);
+  });
+
+  transcriber.on('error', (error: Error) => {
+    console.error('Transcriber error:', error);
+   
+    // await transcriber.close();
+  });
+
+  transcriber.on('close', (code: number, reason: string) => {
+    console.log(`Transcriber closed with code ${code} and reason: ${reason}`);
+    
+    // transcriber = null;
+  });
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const texts: any = {};
+  transcriber.on('transcript', (transcript: RealtimeTranscript) => {
+    if (!transcript.text) {
+         console.error('Transcript is empty');
+      return;
+    }
+
+   
+    setLlamaActive(transcript.text.toLowerCase().indexOf('llama') > 0);
+
+    if (transcript.message_type === 'PartialTranscript') {
+      
+      let msg = '';
+      texts[transcript.audio_start] = transcript.text;
+      const keys = Object.keys(texts);
+      
+      for (const key of keys) {
+        if (texts[key]) {
+          msg += ` ${texts[key]}`;
+        }
+      }
+      console.log('[Transcript] Msg: ', msg);
+      transcriptionProcessed(transcript.text, false);
+    } else {
+      console.log('[Transcript] Final:', transcript.text);
+      transcriptionProcessed(transcript.text, true);
+
+      if (transcript.text.toLowerCase().indexOf('llama') > 0) {
+        console.log('Setting prompt to: ', transcript.text);
+        processPrompt(transcript.text);
+      }
+    }
+  });
+
+  return transcriber;
+}
