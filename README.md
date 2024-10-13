@@ -129,9 +129,11 @@ This project is licensed under the terms of the [MIT License](./LICENSE).
 <img src="https://www.gzeromedia.com/media-library/image.gif?id=52468706&width=980" width="256" height="256">
 <img src="https://media.tenor.com/0oCXYN5vtv8AAAAM/work-sucks.gif" width="256" height="256"/>
 
-## <a href="https://video-conferencing-gamma.vercel.app" title="🕵️ Live Vercel:">
+## <a name="vercel deployment"> 🕵️ Live Vercel: </a>
 
 Check out the live demo of the AI-driven video conferencing app deployed on Vercel:
-
-[![Vercel Logo](https://assets.vercel.com/image/upload/front/favicon/vercel/76x76.png)](https://video-conferencing-gamma.vercel.app)
+ <a href="https://video-conferencing-gamma.vercel.app" title="Vercel Deploy">
+  <img src="https://assets.vercel.com/image/upload/front/favicon/vercel/76x76.png" alt="Vercel Logo" width="30">
+  Live Video-Streaming 
+  </a>
 
