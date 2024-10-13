@@ -117,6 +117,7 @@ Constructive feedback: When reviewing code, focus on giving constructive feedbac
 ## <a name="license"> 👨‍⚖️ Licensing: </a>
    MIT License
    Copyright (c) 2024 Deep Raj
+   
 This project is licensed under the terms of the [MIT License](./LICENSE).
 
 ## 🕺Demonstration: 
