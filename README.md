@@ -61,6 +61,7 @@ makes it an ideal solution for businesses or educational purposes where keeping 
 
 ## <a name="snippet"> 🤠 Setting Up Environment Variables: </a>
   Create a .env file in the root directory and add the following:
+  
            ```bash
                Copy code
                NEXT_PUBLIC_ASSEMBLYAI_API_KEY=your_assemblyai_api_key
